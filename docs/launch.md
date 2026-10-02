@@ -16,7 +16,7 @@ Nothing here has been posted. Replace `<...>` with numbers from **your own** rep
 >
 > Zero dependencies besides git, offline, no hooks. `npx github:Nithinfgs/git-halflife` in any repo (npm release to follow).
 >
-> Limitations, up front: detection is a lower bound (unmarked AI commits count as human), survival is not quality, and agents and humans work on different code, so the age adjustment removes one confounder, not all. I ran it on a few repos with thousands of commits; the results differed a lot between repos, which is partly why I'd like to see yours.
+> Limitations, up front: detection is a lower bound (unmarked AI commits count as human), survival is not quality, and agents and humans work on different code, so the age adjustment removes one confounder, not all. I have only run it on a couple of real repos so far, which is why I would like to see yours.
 >
 > What I'd most like feedback on: commit markers I'm missing, and whether last-touch blame attribution is the right definition of "survived".
 
@@ -47,7 +47,7 @@ Nothing here has been posted. Replace `<...>` with numbers from **your own** rep
 > https://github.com/Nithinfgs/git-halflife
 
 **Technical:**
-> git-halflife: detect agent commits (trailers, bot identities, custom rules) -> `git blame --incremental -w -M` at HEAD -> per-commit line survival -> compare agent vs human survival within age buckets -> exponential half-life fit, with guards against extrapolating from young data. Zero deps, TS, ~1.5k lines. https://github.com/Nithinfgs/git-halflife
+> git-halflife: detect agent commits (trailers, bot identities, custom rules) -> `git blame --incremental -w -M` at HEAD -> per-commit line survival -> compare agent vs human survival within age buckets -> exponential half-life fit, with guards against extrapolating from young data. Zero deps, TS, ~1.4k lines. https://github.com/Nithinfgs/git-halflife
 
 **Thread:**
 > 1/ Teams measure AI coding by volume. I wanted to measure what sticks. Built git-halflife.
