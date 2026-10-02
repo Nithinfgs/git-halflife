@@ -13,7 +13,7 @@ Retroactive, offline, line-level survival analysis straight from your git histor
 
 <img src="docs/assets/demo.svg" alt="git-halflife output: who wrote the code, how much of it survived, and what is on HEAD" width="760">
 
-<sub>Output on a <a href="scripts/demo-repo.mjs">synthetic demo repo</a>. The numbers are made up; the tool is not. <a href="examples/report.html">Example HTML report</a>.</sub>
+<sub>Output on a <a href="scripts/demo-repo.mjs">synthetic demo repo</a>. The numbers are made up; the tool is not. <a href="https://nithinfgs.github.io/git-halflife/examples/report.html">Example HTML report</a>.</sub>
 
 </div>
 
