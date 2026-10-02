@@ -38,8 +38,8 @@
     "ci": "npm run typecheck && npm run lint && npm run build && npm test"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/node": "^22.10.0",
-    "typescript": "^5.7.2"
+    "@biomejs/biome": "^2.5.14",
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
   }
 }
