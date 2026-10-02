@@ -1,0 +1,45 @@
+{
+  "name": "git-halflife",
+  "version": "0.1.0",
+  "description": "How long does AI-written code survive in your repo? Retroactive, offline, line-level survival analysis from git history.",
+  "keywords": [
+    "git",
+    "ai",
+    "claude-code",
+    "copilot",
+    "codex",
+    "cursor",
+    "aider",
+    "code-quality",
+    "developer-tools",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "Nithinfgs",
+  "homepage": "https://github.com/Nithinfgs/git-halflife#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/Nithinfgs/git-halflife.git" },
+  "bugs": { "url": "https://github.com/Nithinfgs/git-halflife/issues" },
+  "type": "module",
+  "bin": {
+    "git-halflife": "dist/cli.js",
+    "halflife": "dist/cli.js"
+  },
+  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "node --test \"test/*.test.ts\"",
+    "demo": "node scripts/demo.mjs",
+    "assets": "node scripts/render-assets.mjs",
+    "prepare": "npm run build",
+    "ci": "npm run typecheck && npm run lint && npm run build && npm test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
