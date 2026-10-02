@@ -1,0 +1,21 @@
+name: Bug report
+description: Something produced a wrong number, crashed, or looked off
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations: { required: true }
+  - type: textarea
+    id: cmd
+    attributes:
+      label: Command and output
+      description: Please redact private file names if needed. `git-halflife --json` is useful.
+      render: shell
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: "Output of `git-halflife -v`, `node -v`, `git --version`, and your OS"
+    validations: { required: true }

@@ -1,0 +1,20 @@
+name: Missing agent signature
+description: A coding agent's commits are not being detected
+labels: [detection]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name and version
+    validations: { required: true }
+  - type: textarea
+    id: sample
+    attributes:
+      label: Sample commit (git log -1 --format=fuller)
+      description: Redact anything private. Author name/email and trailers are what matter.
+      render: text
+    validations: { required: true }
+  - type: input
+    id: docs
+    attributes:
+      label: Link to the tool's documentation of this marker (if any)
